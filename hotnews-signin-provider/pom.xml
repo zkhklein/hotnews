@@ -30,13 +30,8 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.2</version>
         </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.4</version>
-        </dependency>
+
 
         <dependency>
             <groupId>mysql</groupId>
@@ -53,6 +48,20 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.zkh.hotnews</groupId>
+            <artifactId>hotnews-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.zkh.hotnews</groupId>
+            <artifactId>hotnews-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 
@@ -74,7 +83,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>org.hotnews.hotnewssigninprovider.HotnewsSigninProviderApplication</mainClass>
+                    <mainClass>org.zkh.hotnews.provider.signin.HotnewsSigninProviderApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

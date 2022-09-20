@@ -1,5 +1,8 @@
 package org.zkh.hotnews.common.result;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.util.Map;
 
 /**
@@ -10,6 +13,8 @@ import java.util.Map;
  * @Description: 自定义响应数据结构
  * 				前端接受此类数据（json object)后，可自行根据业务去实现相关功能
  */
+@Data
+@AllArgsConstructor
 public class ResultDTO {
 
         /**
