@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.zkh.hotnews.api.UserSigninService;
 import org.zkh.hotnews.data.dto.UserDTO;
 import org.zkh.hotnews.data.entity.User;
+import org.zkh.hotnews.provider.signin.service.UserDataService;
 
 @Service  //暴露服务
 @Slf4j
@@ -14,7 +15,7 @@ public class UserSigninServiceImpl implements UserSigninService {
 
 
     @Autowired
-    UserDataServiceImpl userDataService;
+    UserDataService userDataService;
 
     @Override
     public Boolean signupUser(UserDTO userDTO) throws Exception {
