@@ -10,6 +10,7 @@
         <module name="hotnews-gateway-consumer" />
         <module name="hotnews-audience-provider" />
         <module name="hotnews-author-consumer" />
+        <module name="hotnews-audience-consumer" />
         <module name="hotnews-api" />
         <module name="hotnews-signin-provider" />
         <module name="hotnews-author-provider" />
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hotnews" options="" />
       <module name="hotnews-api" options="-parameters" />
+      <module name="hotnews-audience-consumer" options="-parameters" />
       <module name="hotnews-audience-provider" options="-parameters" />
       <module name="hotnews-author-consumer" options="-parameters" />
       <module name="hotnews-author-provider" options="-parameters" />

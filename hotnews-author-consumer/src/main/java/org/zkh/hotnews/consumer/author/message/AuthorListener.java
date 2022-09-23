@@ -40,6 +40,9 @@ public class AuthorListener {
                 attitudeToPaperDataService.save((AttitudeToPaper) message.getData());
                 break;
             }
+            default:{
+
+            }
         }
 
     }
