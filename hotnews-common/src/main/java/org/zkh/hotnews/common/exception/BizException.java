@@ -1,8 +1,11 @@
-﻿package org.zkh.hotnews.common.exception;
+package org.zkh.hotnews.common.exception;
 
 import org.zkh.hotnews.common.result.ResponseStatusEnum;
 
-public class BizException extends RuntimeException{
+/**
+ * @author S9049660
+ */
+public class BizException extends RuntimeException {
     private ResponseStatusEnum responseStatusEnum;
 
     public BizException(ResponseStatusEnum responseStatusEnum) {

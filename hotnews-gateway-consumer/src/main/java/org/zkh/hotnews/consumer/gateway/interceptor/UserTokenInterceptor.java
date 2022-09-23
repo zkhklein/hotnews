@@ -2,10 +2,9 @@ package org.zkh.hotnews.consumer.gateway.interceptor;
 
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
-
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,17 +14,16 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * @author zkh
  */
-@Slf4j
-@Component
+
 public class UserTokenInterceptor implements HandlerInterceptor {
 
     @Autowired
-    RedisOperator redis;
+    RedisTemplate<String,Object> redis;
 
     @Override
     public boolean preHandle(HttpServletRequest request,
                              @NotNull HttpServletResponse response, @NotNull Object handler) throws Exception {
-
+/*
 
         // 从header中获得用户id和token
         String userId = request.getHeader("headerUserId");
@@ -55,4 +53,5 @@ public class UserTokenInterceptor implements HandlerInterceptor {
          */
         return true;
     }
+
 }

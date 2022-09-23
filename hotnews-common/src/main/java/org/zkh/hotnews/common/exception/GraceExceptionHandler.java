@@ -1,4 +1,4 @@
-﻿package org.zkh.hotnews.common.exception;
+package org.zkh.hotnews.common.exception;
 
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -17,6 +17,7 @@ import java.util.Map;
 /**
  * 统一异常拦截处理
  * 可以针对异常的类型进行捕获，然后返回json信息到前端
+ *
  * @author zkh
  */
 @ControllerAdvice

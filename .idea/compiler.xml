@@ -2,13 +2,15 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hotnews-gateway-consumer" />
-        <module name="hotnews-api" />
         <module name="hotnews-audience-provider" />
+        <module name="hotnews-author-consumer" />
+        <module name="hotnews-api" />
         <module name="hotnews-signin-provider" />
         <module name="hotnews-author-provider" />
         <module name="hotnews-common" />
@@ -17,9 +19,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="hotnews" options="-parameters" />
+      <module name="hotnews" options="" />
       <module name="hotnews-api" options="-parameters" />
       <module name="hotnews-audience-provider" options="-parameters" />
+      <module name="hotnews-author-consumer" options="-parameters" />
       <module name="hotnews-author-provider" options="-parameters" />
       <module name="hotnews-common" options="-parameters" />
       <module name="hotnews-gateway-consumer" options="-parameters" />

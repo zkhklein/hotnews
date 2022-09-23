@@ -1,8 +1,8 @@
-﻿package org.zkh.hotnews.provider.audience.service.impl;
+package org.zkh.hotnews.provider.audience.service.impl;
 
 import org.springframework.stereotype.Service;
 import org.zkh.hotnews.api.AudienceCommentService;
-import org.zkh.hotnews.data.dto.CommentDTO;
+import org.zkh.hotnews.common.data.dto.CommentDTO;
 
 import java.util.List;
 

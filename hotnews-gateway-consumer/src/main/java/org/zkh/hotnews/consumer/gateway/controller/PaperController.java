@@ -1,10 +1,9 @@
-﻿package org.zkh.hotnews.consumer.gateway.controller;
+package org.zkh.hotnews.consumer.gateway.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.zkh.hotnews.common.result.ResultDTO;
-import org.zkh.hotnews.data.dto.AttitudeToPaperDTO;
-import org.zkh.hotnews.data.dto.PaperDTO;
+import org.zkh.hotnews.common.data.dto.AttitudeToPaperDTO;
+import org.zkh.hotnews.common.data.dto.PaperDTO;
 
 @RestController
 @RequestMapping("/paper")
@@ -12,29 +11,30 @@ import org.zkh.hotnews.data.dto.PaperDTO;
 public class PaperController {
 
     @PostMapping("/view")
-    public ResultDTO viewPaper(@RequestParam("id") Long id){
-
+    public ResultDTO viewPaper(@RequestParam("id") Long id) {
+        return ResultDTO.ok();
     }
 
     @PostMapping("/send")
-    public ResultDTO sendPaper(@RequestBody PaperDTO paperDTO){
-
+    public ResultDTO sendPaper(@RequestBody PaperDTO paperDTO) {
+        return ResultDTO.ok();
     }
 
 
     @PostMapping("/attitude/view")
-    public ResultDTO viewMyAttitude(@RequestBody AttitudeToPaperDTO attitudeDTO){
-
+    public ResultDTO viewMyAttitude(@RequestBody AttitudeToPaperDTO attitudeDTO) {
+        return ResultDTO.ok();
     }
 
 
     @PostMapping("/attitude/count")
-    public ResultDTO countAttitude(@RequestParam("id") Long id){
+    public ResultDTO countAttitude(@RequestParam("id") Long id) {
 // AttitudeCountDTO
+        return ResultDTO.ok();
     }
 
     @PostMapping("/attitude/do")
-    public ResultDTO doMyAttitude(@RequestBody AttitudeToPaperDTO attitudeDTO){
-
+    public ResultDTO doMyAttitude(@RequestBody AttitudeToPaperDTO attitudeDTO) {
+        return ResultDTO.ok();
     }
 }

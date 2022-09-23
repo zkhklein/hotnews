@@ -1,6 +1,6 @@
-﻿package org.zkh.hotnews.api;
+package org.zkh.hotnews.api;
 
-import org.zkh.hotnews.data.dto.PaperDTO;
+import org.zkh.hotnews.common.data.dto.PaperDTO;
 
 /**
  * @author S9049660

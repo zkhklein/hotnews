@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/hotnews-audience-provider/pom.xml" />
         <option value="$PROJECT_DIR$/hotnews-author-provider/pom.xml" />
         <option value="$PROJECT_DIR$/hotnews-api/pom.xml" />
+        <option value="$PROJECT_DIR$/hotnews-author-consumer/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,18 @@
+# \u5E94\u7528\u540D\u79F0
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.176.161.120:33066/hotnews_dev?characterEncoding=utf8&serverTimezone=GMT&useSSL=false&autoReconnect=true&rewriteBatchedStatements=true
+    username: hotnews_dev
+    password: 4g3yxxi0D3ZdMLz2JQSg3fnNK1ylp3us
+  redis:
+    host: 10.176.47.187
+    port: 9736
+    database: 0
+    timeout: 10000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
