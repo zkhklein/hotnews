@@ -17,7 +17,7 @@ import lombok.ToString;
 @ToString
 @TableName("comment")
 public class Comment {
-    @TableId(type = IdType.AUTO)
+    @TableId(type = IdType.INPUT)
     private Long id;
     private Long authorId;
     private String content;

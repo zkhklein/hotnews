@@ -19,6 +19,7 @@ public class UserController {
 
     @PostMapping("/signup")
     public ResultDTO signup(@RequestBody UserDTO userDTO) throws Exception {
+
         if(userSigninService.verifyUserName(userDTO.getName())){
             return ResultDTO.ok(userSigninService.signupUser(userDTO));
         }else {
@@ -28,6 +29,6 @@ public class UserController {
 
     @PostMapping("/signin")
     public ResultDTO signin(@RequestBody UserDTO userDTO) throws Exception{
-        return ResultDTO.ok();
+        return ResultDTO.ok(userSigninService.signinUser(userDTO.getId(),userDTO.getPassword()));
     }
 }

@@ -11,6 +11,8 @@ import lombok.ToString;
 @ToString
 public class AttitudeToPaperDTO {
     private Integer attitude;
+    private Integer likeChange;
+    private Integer dislikeChange;
     private Long userId;
     private Long paperId;
 }

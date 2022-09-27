@@ -6,14 +6,13 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
+import org.zkh.hotnews.common.data.dto.PaperDTO;
 import org.zkh.hotnews.common.data.entity.AttitudeToPaper;
 import org.zkh.hotnews.common.data.entity.Paper;
-import org.zkh.hotnews.common.data.service.AttitudeToPaperDataService;
-import org.zkh.hotnews.common.data.service.PaperDataService;
 import org.zkh.hotnews.common.message.MessageDTO;
 import org.zkh.hotnews.common.message.MessageType;
-
-import java.util.Optional;
+import org.zkh.hotnews.common.service.AttitudeToPaperDataService;
+import org.zkh.hotnews.common.service.PaperDataService;
 
 @Component
 public class AuthorListener {
@@ -25,25 +24,16 @@ public class AuthorListener {
     private final Gson gson = new GsonBuilder().create();
 
     @KafkaListener(topics = {"author"})
-    public void handMessage(ConsumerRecord<String, String> record){
+    public void handMessage(ConsumerRecord<String, String> record) {
 
-        Optional<?> kafkaMessage = Optional.ofNullable(record.value());
         // 反序列化
-        MessageDTO message = gson.fromJson((String) kafkaMessage.get(), MessageDTO.class);
+        PaperDTO paperDTO = gson.fromJson((String) record.value(), PaperDTO.class);
 
-        switch (message.getType()){
-            case MessageType.SEND_PAPER:{
-                paperDataService.save((Paper) message.getData());
-                break;
-            }
-            case MessageType.LIKE_PAPER:{
-                attitudeToPaperDataService.save((AttitudeToPaper) message.getData());
-                break;
-            }
-            default:{
+                paperDataService.save(
+                        new Paper().setId(paperDTO.getId()).setAuthorId(paperDTO.getAuthorId())
+                                .setContent(paperDTO.getContent()).setTitle(paperDTO.getTitle()));
 
-            }
         }
 
     }
-}
+

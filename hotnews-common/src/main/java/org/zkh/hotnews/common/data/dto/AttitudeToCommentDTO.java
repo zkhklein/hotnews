@@ -12,7 +12,8 @@ import lombok.ToString;
 public class AttitudeToCommentDTO {
 
     private Integer attitude;
-
+    private Integer likeChange;
+    private Integer dislikeChange;
     private Long userId;
 
     private Long commentId;

@@ -27,9 +27,8 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.zkh.hotnews</groupId>
-            <artifactId>hotnews-gateway-consumer</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -42,6 +41,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
     </dependencies>
 
 

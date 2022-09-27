@@ -7,6 +7,9 @@ import lombok.ToString;
 
 import java.io.Serializable;
 
+/**
+ * @author S9049660
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

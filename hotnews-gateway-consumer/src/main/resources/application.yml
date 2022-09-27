@@ -6,8 +6,8 @@ spring:
     username: hotnews_dev
     password: 4g3yxxi0D3ZdMLz2JQSg3fnNK1ylp3us
   redis:
-    host: 10.176.47.187
-    port: 9736
+    cluster:
+      nodes: 10.176.79.169:9736
     database: 0
     timeout: 10000ms
     lettuce:
@@ -16,3 +16,21 @@ spring:
         max-wait: -1ms
         max-idle: 8
         min-idle: 0
+  kafka:
+    bootstrap-servers: dgdev-cold-backup-kafka.global.yyyhbx.kafka.oppo.dev:9095,dgdev-cold-backup-kafka.global.yyyjbx.kafka.oppo.dev:9095,dgdev-cold-backup-kafka.global.yyy4bx.kafka.oppo.dev:9095
+    producer:
+      retries: 5
+      acks: 1
+      batch-size: 1600
+      properties:
+        linger:
+          ms: 10
+      buffer-memory: 33554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      client-id: 926f38ee-aafc-4064-8262-f360fd3331c7
+
+
+logging:
+  level:
+    root: info

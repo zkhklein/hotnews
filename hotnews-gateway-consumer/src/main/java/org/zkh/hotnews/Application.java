@@ -8,8 +8,9 @@ import org.springframework.cache.annotation.EnableCaching;
 /**
  * @author zkh
  */
+
 @SpringBootApplication
-@MapperScan("org.zkh.hotnews.mapper")
+@MapperScan("org.zkh.hotnews.common.mapper")
 @EnableCaching
 public class Application {
 

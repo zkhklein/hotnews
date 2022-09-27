@@ -12,9 +12,10 @@ public class RedisUtil {
     @Autowired
     private RedisTemplate<String,Object> redisTemplate;
 
+    private final long defaultTime = 20;
     public boolean set(String key,Object value){
         try{
-            redisTemplate.opsForValue().set(key,value);
+            redisTemplate.opsForValue().set(key,value,defaultTime+ (long) (defaultTime*Math.random()),TimeUnit.HOURS);
             return true;
         }catch (Exception e){
             return false;
@@ -32,6 +33,11 @@ public class RedisUtil {
 
     public Object get(String key){
         return key == null ? null : redisTemplate.opsForValue().get(key);
+    }
+
+    public boolean delete(String key){
+
+        return Boolean.TRUE.equals(redisTemplate.delete(key));
     }
 
 }

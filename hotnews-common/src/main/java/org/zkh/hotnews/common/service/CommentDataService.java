@@ -1,4 +1,4 @@
-package org.zkh.hotnews.common.data.service;
+package org.zkh.hotnews.common.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.zkh.hotnews.common.data.entity.Comment;
