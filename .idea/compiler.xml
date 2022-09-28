@@ -9,14 +9,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hotnews-gateway-consumer" />
         <module name="hotnews-audience-provider" />
-        <module name="hotnews-author-consumer" />
-        <module name="hotnews-audience-consumer" />
+        <module name="hotnews-message-consumer" />
         <module name="hotnews-api" />
         <module name="hotnews-signin-provider" />
         <module name="hotnews-author-provider" />
         <module name="hotnews-common" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hotnews-audience-consumer" target="11" />
+      <module name="hotnews-message-consumer" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -24,10 +27,10 @@
       <module name="hotnews-api" options="-parameters" />
       <module name="hotnews-audience-consumer" options="-parameters" />
       <module name="hotnews-audience-provider" options="-parameters" />
-      <module name="hotnews-author-consumer" options="-parameters" />
       <module name="hotnews-author-provider" options="-parameters" />
       <module name="hotnews-common" options="-parameters" />
       <module name="hotnews-gateway-consumer" options="-parameters" />
+      <module name="hotnews-message-consumer" options="-parameters" />
       <module name="hotnews-signin-provider" options="-parameters" />
     </option>
   </component>

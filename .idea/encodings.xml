@@ -5,12 +5,12 @@
     <file url="file://$PROJECT_DIR$/hotnews-audience-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hotnews-audience-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hotnews-audience-provider/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hotnews-author-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hotnews-author-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hotnews-author-provider/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hotnews-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hotnews-gateway-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hotnews-gateway-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hotnews-message-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hotnews-signin-provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hotnews-signin-provider/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

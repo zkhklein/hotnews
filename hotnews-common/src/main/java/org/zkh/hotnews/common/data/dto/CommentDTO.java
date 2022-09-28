@@ -15,6 +15,7 @@ public class CommentDTO implements Serializable {
     private Long id;
     private Long authorId;
     private String content;
+    private Long paperId;
     private Long parent;
     private Integer likeNum;
     private Integer disLikeNum;

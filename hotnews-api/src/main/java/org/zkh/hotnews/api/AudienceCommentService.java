@@ -10,11 +10,11 @@ import java.util.List;
  */
 public interface AudienceCommentService {
 
-    public Integer sendComment(CommentDTO commentDTO) throws Exception;
+    public Boolean sendComment(CommentDTO commentDTO) throws Exception;
 
     public Integer likeComment(Long commentId, Long userId) throws Exception;
 
     public Integer dislikeComment(Long commentId, Long userId) throws Exception;
 
-    public List<CommentDTO> viewComments(Long paperId) throws Exception;
+    public String viewComment(Long commentId) throws Exception;
 }

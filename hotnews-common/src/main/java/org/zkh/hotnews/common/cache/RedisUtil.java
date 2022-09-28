@@ -15,7 +15,8 @@ public class RedisUtil {
     private final long defaultTime = 20;
     public boolean set(String key,Object value){
         try{
-            redisTemplate.opsForValue().set(key,value,defaultTime+ (long) (defaultTime*Math.random()),TimeUnit.HOURS);
+           // redisTemplate.opsForValue().set(key,value,defaultTime+ (long) (defaultTime*Math.random()),TimeUnit.HOURS);
+            redisTemplate.opsForValue().set(key,value);
             return true;
         }catch (Exception e){
             return false;

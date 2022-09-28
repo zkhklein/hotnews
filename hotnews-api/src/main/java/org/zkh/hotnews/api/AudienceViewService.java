@@ -1,5 +1,6 @@
 package org.zkh.hotnews.api;
 
+import org.zkh.hotnews.common.data.dto.AttitudeToPaperDTO;
 import org.zkh.hotnews.common.data.dto.PaperDTO;
 
 public interface AudienceViewService {
@@ -10,7 +11,7 @@ public interface AudienceViewService {
     public String viewPaperDislikeNum(Long paperId) throws Exception;
     public String viewPaperCommentNum(Long paperId) throws Exception;
     public String viewAttitudeToPaper(Long paperId,Long userId) throws Exception;
-    public Integer doLikePaper(Long paperId, Long userId) throws Exception;
+    public Boolean doLikePaper(AttitudeToPaperDTO attitudeToPaperDTO) throws Exception;
 
-    public Integer doDislikePaper(Long paperId, Long userId) throws Exception;
+    public Boolean doDislikePaper(AttitudeToPaperDTO attitudeToPaperDTO) throws Exception;
 }
