@@ -16,6 +16,9 @@ import org.zkh.hotnews.common.service.AttitudeToPaperDataService;
 import org.zkh.hotnews.common.service.CommentDataService;
 import org.zkh.hotnews.common.service.PaperDataService;
 
+/**
+ * @author S9049660
+ */
 @Component
 
 public class MessageListener {
